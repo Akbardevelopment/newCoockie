@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+::selection {
+  background-color: black;
+  color: yellowgreen;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Bonheur Royale", cursive;
+}
+body .main .first {
+  background: url("/images/cake-4910417.jpg") no-repeat center center/cover;
+  height: 500px;
+}
+body .main .first .continue {
+  width: 600px;
+  left: 500px;
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+body .main .first .continue .bon1 {
+  text-shadow: 0 0 10px white;
+}
+body .main .first .continue .bonu {
+  margin-top: 90px;
+  font-size: 100px;
+  text-shadow: 0 0 10px white;
+}
+body .main .first .continue .bon {
+  text-shadow: 0 0 10px black;
+}
+body .main .first .continue button {
+  border: none;
+  border-radius: 30px;
+  background-color: #3adfa7;
+  box-shadow: 9px 8px 100px #3adfa7;
+}
+body .main .first .continue .congratulations {
+  z-index: 30;
+  position: absolute;
+  top: -50px;
+  left: -17%;
+  display: none;
+}
+body .main .first .container1 {
+  top: 0;
+  z-index: 2;
+  padding-top: 10px;
+  flex-direction: row;
+}
+body .main .first .container1 a {
+  text-decoration: none;
+}
+body .main .first .container1 .bon {
+  width: 70px;
+  text-shadow: 0 0 10px black;
+  color: white;
+}
+body .main .first .container1 .inp {
+  width: 200px;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 70px;
+  background: linear-gradient(to bottom, transparent, pink);
+  border-radius: 5px;
+  color: ghostwhite;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid red;
+}
+body .main .first .container1 .inp::placeholder {
+  color: ghostwhite;
+}
+body .main .first .container1 img {
+  width: 30px;
+  margin-left: 20px;
+}
+body .main .first .container1 .end {
+  display: flex;
+}
+body .main .first .container1 .end a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 40px !important;
+}
+body .main .first .container1 .end img {
+  cursor: pointer;
+}
+body .main .first .container1 .end .set {
+  margin-left: 40px;
+}
+body .main .first .container1 .end .settings {
+  display: none;
+  opacity: 0.5;
+  font-family: sans-serif;
+  background-color: grey;
+  position: absolute;
+  border-radius: 10px;
+  top: 70px;
+  left: 90.5%;
+  width: 140px;
+  height: 150px;
+}
+body .main .first .container1 .end .settings .tran {
+  position: relative;
+  width: 50px;
+  top: 5px;
+  left: 10px;
+  padding: 0;
+}
+body .main .first .container1 .end .settings .tran .translater {
+  top: 7px;
+  left: 30px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotateZ(-45deg);
+}
+body .main .first .container1 .end .settings .tran:hover .translater {
+  transition: all 0.2s ease-in-out;
+  top: 5;
+  left: 35px;
+  transform: rotateZ(45deg);
+}
+body .main .first .container1 .end .settings .tran:hover .op {
+  transition: all 0.5s ease-in-out;
+  display: inline;
+}
+body .main .first .container1 .end .settings .tran:hover .op option {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 20px !important;
+  background-color: blueviolet;
+}
+body .main .first .container1 .end .settings .tran:hover .op .rus {
+  width: 18px;
+  position: absolute;
+  left: 12px;
+  top: 25px;
+}
+body .main .first .container1 .end .settings .tran:hover .op .eng {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 45px;
+  border-radius: 30px;
+}
+body .main .first .container1 .end .settings .tran:hover .op .uzb {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 65px;
+  border-radius: 30px;
+}
+body .main .first .container1 .end .settings .tran .op {
+  display: none;
+}
+body .main .first .container1 .end .settings .raz {
+  padding-top: 10px !important;
+  text-align: center;
+}
+body .main .first .container1 .end .settings:hover {
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+body .main .menu {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #c0c0c0;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 75px;
+}
+body .main .slider {
+  margin: 5px;
+}
+body .main .slider .another {
+  top: 100px;
+}
+body .main .slider .item {
+  height: 300px;
+  margin: 10px;
+}
+body .main .slider .item .childitem1 {
+  text-align: center;
+}
+body .main .slider .item .imit {
+  overflow: hidden;
+}
+body .main .slider .item .imit img {
+  filter: brightness(50%);
+}
+body .main .slider .item .imit img:hover {
+  filter: brightness(100%);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+body .main .FAQs {
+  margin: 10px;
+}
+body .main .FAQs .FirstFaq {
+  display: flex;
+}
+body .main .FAQs .FirstFaq .hambur {
+  position: absolute;
+  z-index: 51;
+  background-color: blueviolet;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 65px;
+  margin-left: 1350px;
+}
+body .main .FAQs .FirstFaq .hambur:hover {
+  cursor: pointer;
+}
+body .main .FAQs .FirstFaq .letter {
+  position: absolute;
+  width: 500px;
+  margin-left: 750px;
+  z-index: 55;
+}
+body .main .FAQs .FirstFaq .pech {
+  margin-top: 200px;
+}
+body .main .FAQs .FirstFaq .PIRST {
+  display: none;
+  margin-left: -90px;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-1 {
+  display: flex;
+  position: absolute;
+  margin-left: 660px;
+  margin-top: 50px;
+  z-index: 1;
+  background-color: white;
+  width: 500px;
+  transform: rotateZ(10deg);
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-1:hover {
+  z-index: 50;
+  margin-left: 500px;
+  transition: all 0.5s ease-in-out;
+  transform: rotateZ(0deg);
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-1 .FAQ-1img img {
+  width: 200px;
+  height: 200px;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-2 {
+  display: flex;
+  position: absolute;
+  margin-left: 675px;
+  margin-top: 90px;
+  transform: rotateZ(0deg);
+  background-color: white;
+  width: 500px;
+  z-index: 2;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-2:hover {
+  z-index: 50;
+  margin-left: 500px;
+  transition: all 0.5s ease-in-out;
+  transform: rotateZ(0deg);
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-2 .FAQ-2img img {
+  width: 200px;
+  height: 200px;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-3 {
+  display: flex;
+  position: absolute;
+  margin-top: 120px;
+  background-color: white;
+  z-index: 3;
+  margin-left: 700px;
+  transform: rotateZ(-10deg);
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-3:hover {
+  z-index: 50;
+  margin-left: 500px;
+  transition: all 0.5s ease-in-out;
+  transform: rotateZ(0deg);
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-3 .FAQ-3img img {
+  width: 200px;
+  height: 200px;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-4 {
+  display: flex;
+  position: absolute;
+  margin-top: 150px;
+  background-color: white;
+  z-index: 4;
+  margin-left: 730px;
+  transform: rotateZ(-20deg);
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-4:hover {
+  z-index: 50;
+  margin-left: 500px;
+  transition: all 0.5s ease-in-out;
+  transform: rotateZ(0deg);
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-4 .FAQ-4img img {
+  width: 200px;
+  height: 200px;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-5 {
+  display: flex;
+  position: absolute;
+  margin-top: 180px;
+  background-color: white;
+  z-index: 5;
+  margin-left: 770px;
+  transform: rotateZ(-30deg);
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-5:hover {
+  z-index: 50;
+  margin-left: 500px;
+  transition: all 0.5s ease-in-out;
+  transform: rotateZ(0deg);
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-5 .FAQ-5img img {
+  width: 200px;
+  height: 200px;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-6 {
+  display: flex;
+  position: absolute;
+  margin-top: 200px;
+  background-color: white;
+  z-index: 6;
+  margin-left: 810px;
+  transform: rotateZ(-40deg);
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-6:hover {
+  z-index: 50;
+  margin-left: 500px;
+  transition: all 0.5s ease-in-out;
+  transform: rotateZ(0deg);
+}
+body .main .FAQs .FirstFaq .PIRST .FAQ-6 .FAQ-6img img {
+  width: 200px;
+  height: 200px;
+}
+body .main .FAQs .SecondFaq .pech1 {
+  position: absolute;
+  margin-top: 400px;
+}
+body .main .FAQs .SecondFaq .arrow1 {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  margin-left: 400px;
+  margin-top: -50px;
+}
+body .main .FAQs .SecondFaq .arrow1 div {
+  position: absolute;
+  top: 20px;
+  width: 90px;
+  height: 10px;
+  background-color: #337AB7;
+  left: 0;
+  display: block;
+}
+body .main .FAQs .SecondFaq .arrow1 div::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  top: -11px;
+  right: -8px;
+  background-color: #337AB7;
+  transform: rotate(45deg);
+}
+body .main .FAQs .SecondFaq .arrow1 div::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  top: 11px;
+  right: -8px;
+  background-color: #337AB7;
+  transform: rotate(-45deg);
+}
+body .main .FAQs .SecondFaq .arrow2 {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  margin-left: 400px;
+  margin-top: 390px;
+}
+body .main .FAQs .SecondFaq .arrow2 div {
+  position: absolute;
+  top: 20px;
+  width: 90px;
+  height: 10px;
+  background-color: #337AB7;
+  left: 0;
+  display: block;
+}
+body .main .FAQs .SecondFaq .arrow2 div::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  top: -11px;
+  right: -8px;
+  background-color: #337AB7;
+  transform: rotate(45deg);
+}
+body .main .FAQs .SecondFaq .arrow2 div::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  top: 11px;
+  right: -8px;
+  background-color: #337AB7;
+  transform: rotate(-45deg);
+}
+body .main .FAQs .SecondFaq .arrow3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 370px;
+  margin-left: 1450px;
+  border-top: 5px solid #6E18C0;
+  border-right: 5px solid #6E18C0;
+  margin-right: 60px;
+  transform: rotateZ(135deg);
+}
+body .main .FAQs .SecondFaq .arrow4 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 430px;
+  margin-left: 1450px;
+  border-top: 5px solid #6E18C0;
+  border-right: 5px solid #6E18C0;
+  margin-right: 60px;
+  transform: rotateZ(-45deg);
+}
+body .main .FAQs .SecondFaq .otv {
+  position: absolute;
+  margin-left: 690px;
+  margin-top: 395px;
+}
+body .main .FAQs .SecondFaq .otv a {
+  text-decoration: none;
+  color: black;
+}
+body .main .ab {
+  margin-top: 10px;
+}
+body .main .abo {
+  margin: 10px !important;
+}
+body .main .abo .fir {
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+body .main .abo .sec {
+  margin-left: 0;
+}
+body .main .abo .sec .row {
+  margin-top: 10px;
+}
+body .main .abo .sec .row div h3 {
+  color: violet;
+}
+body .main .abo .sec .row .geo-icon-16 {
+  margin-top: 10px;
+  width: 40px;
+}
+body .main .abo .sec .row .telel p {
+  font-family: sans-serif !important;
+}
+body .main .abo .sec .gmap_iframe {
+  width: 730px;
+  height: 300px;
+}
+body .main .contactus {
+  background: linear-gradient(to right, pink, blueviolet);
+}
+body .main .contactus .col .inpo {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+body .main .contactus .col .inpo::placeholder {
+  color: ghostwhite;
+}
+body .main .contactus .col .otpr {
+  width: 100%;
+  height: 50px;
+  color: ghostwhite;
+  margin-left: 9px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+body .main .contactus .nap {
+  margin-left: 250px;
+  color: #c0c0c0;
+}
+body .main .contactus .ow {
+  margin-left: 30px;
+}
+body .main .contactus .ow .row {
+  margin-top: 10px;
+}
+body .main .contactus .ow .row div h3 {
+  color: violet;
+}
+body .main .contactus .ow .row .geo-icon-16 {
+  margin-top: 10px;
+  width: 40px;
+}
+body .main .contactus .ow .row .telel p {
+  font-family: sans-serif !important;
+}
+body .main .foot {
+  background-color: #212121;
+  height: 200px;
+}
+body .main .foot .row .tele {
+  margin-left: 30px;
+  text-decoration: none;
+  color: pink;
+}
+body .main .foot .row .telegin {
+  margin-left: 10px;
+  width: 50px;
+}
+body .main .foot .row p {
+  color: pink;
+  margin-left: 30px;
+}
+body .main .foot .row p span {
+  margin-left: 30px;
+  color: ghostwhite;
+  font-family: sans-serif;
+}
+body .main footer {
+  margin: 0;
+  background-color: #000;
+  color: #f1f1f1;
+  text-align: center;
+}
