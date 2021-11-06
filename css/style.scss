@@ -140,12 +140,41 @@ body{
                             transition: all 0.5s ease-in-out;
                             display: inline;
                             
-                            option{
-                            border: 1px solid black;
-                            border-radius: 10px;
-                            height: 20px !important;
-                            background-color: blueviolet;
-                        }
+                            .op1{
+                                
+                                cursor: pointer;
+                                border: 1px solid black;
+                                height: 20px !important;
+                                color: white;
+                                background: linear-gradient(to bottom, white, blue, red);
+                                &:hover{
+                                background-color: blueviolet;
+                                border-radius: 10px;
+                                }
+                            }
+                            .op2{
+                                
+                                cursor: pointer;
+                                border: 1px solid black;
+                                height: 20px !important;
+                                color: white;
+                                background: linear-gradient(to bottom, darkblue, red, darkblue);
+                                &:hover{
+                                background-color: blueviolet;
+                                border-radius: 10px;
+                                }
+                            }
+                            .op3{
+                                
+                                cursor: pointer;
+                                border: 1px solid black;
+                                height: 20px !important;
+                                background:linear-gradient(to bottom, blue, white, green);
+                                &:hover{
+                                background-color: blueviolet;
+                                border-radius: 10px;
+                                }
+                            }
                         .rus{
                             width: 18px;
                             position: absolute;

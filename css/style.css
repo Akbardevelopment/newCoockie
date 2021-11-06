@@ -132,11 +132,37 @@ body .main .first .container1 .end .settings .tran:hover .op {
   transition: all 0.5s ease-in-out;
   display: inline;
 }
-body .main .first .container1 .end .settings .tran:hover .op option {
+body .main .first .container1 .end .settings .tran:hover .op .op1 {
+  cursor: pointer;
   border: 1px solid black;
-  border-radius: 10px;
   height: 20px !important;
+  color: white;
+  background: linear-gradient(to bottom, white, blue, red);
+}
+body .main .first .container1 .end .settings .tran:hover .op .op1:hover {
   background-color: blueviolet;
+  border-radius: 10px;
+}
+body .main .first .container1 .end .settings .tran:hover .op .op2 {
+  cursor: pointer;
+  border: 1px solid black;
+  height: 20px !important;
+  color: white;
+  background: linear-gradient(to bottom, darkblue, red, darkblue);
+}
+body .main .first .container1 .end .settings .tran:hover .op .op2:hover {
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+body .main .first .container1 .end .settings .tran:hover .op .op3 {
+  cursor: pointer;
+  border: 1px solid black;
+  height: 20px !important;
+  background: linear-gradient(to bottom, blue, white, green);
+}
+body .main .first .container1 .end .settings .tran:hover .op .op3:hover {
+  background-color: blueviolet;
+  border-radius: 10px;
 }
 body .main .first .container1 .end .settings .tran:hover .op .rus {
   width: 18px;
