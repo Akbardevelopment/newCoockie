@@ -185,7 +185,7 @@ body .main .slider .another {
   top: 100px;
 }
 body .main .slider .item {
-  height: 300px;
+  height: 300px !important;
   margin: 10px;
 }
 body .main .slider .item .childitem1 {
