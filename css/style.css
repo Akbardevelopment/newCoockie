@@ -608,3 +608,21 @@ body .main footer {
   color: #f1f1f1;
   text-align: center;
 }
+body .message .d {
+  position: fixed;
+  z-index: 100;
+  left: 1145px;
+  border-radius: 10px;
+  bottom: 2px;
+  width: 300px;
+  height: 400px;
+  background-color: #000;
+}
+body .message img {
+  z-index: 100;
+  cursor: pointer;
+  left: 1450px;
+  top: 665px;
+  position: fixed;
+  width: 60px;
+}
