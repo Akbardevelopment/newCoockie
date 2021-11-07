@@ -26,5 +26,12 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 2000
-  });
-  });
+});
+});
+
+$("#mes").click(function(){
+    $('.d').fadeIn()
+    $('.x').click(function(){
+        $('.d').fadeOut()
+    })
+})

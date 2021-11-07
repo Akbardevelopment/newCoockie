@@ -26,3 +26,9 @@ $(document).ready(function () {
     speed: 2000
   });
 });
+$("#mes").click(function () {
+  $('.d').fadeIn();
+  $('.x').click(function () {
+    $('.d').fadeOut();
+  });
+});
