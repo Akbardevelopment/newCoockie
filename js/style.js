@@ -34,4 +34,11 @@ $("#mes").click(function(){
     $('.x').click(function(){
         $('.d').fadeOut()
     })
-})
+});
+
+$(document).ready(function(){
+  $(".market").click(function(){
+    //   $("body").css("backdrop-filter", "blur(5px)");
+      $(".convert").fadeIn()
+  });
+});

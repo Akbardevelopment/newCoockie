@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 ::selection {
   background-color: black;
   color: yellowgreen;
 }
 
 body {
+  margin: 0;
   overflow-x: hidden;
   font-family: "Bonheur Royale", cursive;
 }
@@ -12,52 +19,19 @@ body .main .first {
   background: url("/images/cake-4910417.jpg") no-repeat center center/cover;
   height: 500px;
 }
-body .main .first .continue {
-  width: 600px;
-  left: 500px;
-  text-align: center;
-  position: relative;
-  color: #000;
-}
-body .main .first .continue .bon1 {
-  text-shadow: 0 0 10px white;
-}
-body .main .first .continue .bonu {
-  margin-top: 90px;
-  font-size: 100px;
-  text-shadow: 0 0 10px white;
-}
-body .main .first .continue .bon {
-  text-shadow: 0 0 10px black;
-}
-body .main .first .continue button {
-  border: none;
-  border-radius: 30px;
-  background-color: #3adfa7;
-  box-shadow: 9px 8px 100px #3adfa7;
-}
-body .main .first .continue .congratulations {
-  z-index: 30;
-  position: absolute;
-  top: -50px;
-  left: -17%;
-  display: none;
-}
-body .main .first .container1 {
+body .main .first .container1 .end {
+  position: fixed;
+  z-index: 54;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(243, 74, 74, 0.288);
   top: 0;
   z-index: 2;
   padding-top: 10px;
   flex-direction: row;
+  display: flex;
 }
-body .main .first .container1 a {
-  text-decoration: none;
-}
-body .main .first .container1 .bon {
-  width: 70px;
-  text-shadow: 0 0 10px black;
-  color: white;
-}
-body .main .first .container1 .inp {
+body .main .first .container1 .end .inp {
   width: 200px;
   font-family: sans-serif;
   font-size: 20px;
@@ -70,15 +44,14 @@ body .main .first .container1 .inp {
   border: none;
   border-bottom: 2px solid red;
 }
-body .main .first .container1 .inp::placeholder {
+body .main .first .container1 .end .inp::placeholder {
   color: ghostwhite;
+  text-align: center;
+  text-shadow: 2px 4px 5px black;
 }
-body .main .first .container1 img {
+body .main .first .container1 .end img {
   width: 30px;
   margin-left: 20px;
-}
-body .main .first .container1 .end {
-  display: flex;
 }
 body .main .first .container1 .end a {
   text-decoration: none;
@@ -86,10 +59,13 @@ body .main .first .container1 .end a {
   text-shadow: 0 0 10px black;
   font-size: 20px;
   margin-top: 10px;
-  margin-left: 40px !important;
+  margin-left: 30px !important;
 }
 body .main .first .container1 .end img {
   cursor: pointer;
+}
+body .main .first .container1 .end .market {
+  margin-left: 10px;
 }
 body .main .first .container1 .end .set {
   margin-left: 40px;
@@ -198,12 +174,43 @@ body .main .first .container1 .end .settings:hover {
   transition: all 0.5s ease-in-out;
   opacity: 1;
 }
+body .main .continue {
+  width: 600px;
+  left: 500px;
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+body .main .continue .bon1 {
+  text-shadow: 0 0 10px white;
+}
+body .main .continue .bonu {
+  margin-top: 90px;
+  font-size: 100px;
+  text-shadow: 0 0 10px white;
+}
+body .main .continue .bon {
+  text-shadow: 0 0 10px black;
+}
+body .main .continue button {
+  border: none;
+  border-radius: 30px;
+  background-color: #3adfa7;
+  box-shadow: 9px 8px 100px #3adfa7;
+}
+body .main .continue .congratulations {
+  z-index: 30;
+  position: absolute;
+  top: -50px;
+  left: -17%;
+  display: none;
+}
 body .main .menu {
   margin-top: 10px;
   font-size: 30px;
   text-align: center;
-  color: #c0c0c0;
-  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 75px;
+  color: #fff;
+  text-shadow: 2px 2px 7px #000;
 }
 body .main .slider {
   margin: 5px;
@@ -219,9 +226,13 @@ body .main .slider .item .childitem1 {
   text-align: center;
 }
 body .main .slider .item .imit {
+  border-top-right-radius: 100px !important;
+  border-bottom-left-radius: 100px;
+  height: 300px;
   overflow: hidden;
 }
 body .main .slider .item .imit img {
+  height: 300px;
   filter: brightness(50%);
 }
 body .main .slider .item .imit img:hover {
@@ -702,4 +713,64 @@ body .message img {
   bottom: 3px;
   position: fixed;
   width: 60px;
+}
+body .convert {
+  display: none;
+  border-radius: 20px;
+  top: 120px;
+  left: 400px;
+  z-index: 55;
+  width: 700px;
+  height: 200px;
+  position: fixed;
+  background-color: #FF2D95;
+  box-shadow: 5px 5px 10px grey;
+}
+body .convert .menu {
+  text-align: center;
+  font-size: 20px;
+}
+body .convert .op .imgandbutton {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+}
+body .convert .op .imgandbutton:hover img {
+  margin-left: 50px;
+  transition: all 0.5s ease-out;
+  width: 50px;
+  height: 50px;
+}
+body .convert .op .imgandbutton:hover p {
+  transition: all 0.5s ease-out;
+  font-size: 15px;
+}
+body .convert .op .imgandbutton img {
+  margin-left: 100px;
+  width: 20px;
+  height: 20px;
+}
+body .convert .op .imgandbutton p {
+  font-size: 30px;
+}
+body .convert .op input {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+body .convert .op button {
+  margin-left: 60px;
+}
+body .convert .op1 input {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+body .convert .op1 button {
+  margin-left: 60px;
+}
+body .convert .op2 input {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+body .convert .op2 button {
+  margin-left: 60px;
 }
