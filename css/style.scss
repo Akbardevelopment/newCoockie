@@ -3,11 +3,6 @@
 $ghost: ghostwhite;
 $gem: 'font-awesome-sass';
 
-head{
-    .shortcut{
-        
-    }
-}
 ::selection{
     background-color: black;
     color: yellowgreen;
@@ -24,7 +19,7 @@ body{
     .container1{
         .end{
         position: fixed;
-        z-index: 54;
+        z-index:999999999;
         width: 100%;
         backdrop-filter: blur(5px);
         background-color: rgba(243, 74, 74, 0.288);
@@ -37,7 +32,7 @@ body{
             font-family: sans-serif;
             font-size: 20px;
             margin-left: 70px;
-            background:linear-gradient(to bottom, transparent, pink);
+            background:linear-gradient(to bottom, transparent, white);
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             color:$ghost;
@@ -45,7 +40,7 @@ body{
             border: none;
             border-bottom:2px solid red;
             &::placeholder{
-                color:$ghost;
+                color: red;
                 text-align: center;
                 text-shadow: 2px 4px 5px black;
             }
@@ -62,18 +57,17 @@ body{
                 text-shadow: 0 0 10px black;
                 font-size: 20px;
                 margin-top: 10px;
-                margin-left: 30px !important;
+                margin-left: 40px !important;
             }
             img{
                 cursor: pointer;
             }
-            .market{
-                margin-left: 10px;
-            }
-            .set{
+             .set{
+                 height: 5vh;
                 margin-left: 40px;
             }
             .settings{
+                transition: all 0.5s ease-in-out;
                 display: none;
                 opacity: 0.5;
                 font-family: sans-serif;
@@ -99,17 +93,17 @@ body{
                         border-right:1px solid black;
                         border-bottom:1px solid black;
                         transform: rotateZ(-45deg);
+                        transition: all 0.2s ease-in-out;
                     }
                     &:hover{
                         .translater{
-                            transition: all 0.2s ease-in-out;
                             top: 5;
                             left: 35px;
                             transform: rotateZ(45deg);
                         }
                         .op {
-                            transition: all 0.5s ease-in-out;
                             display: inline;
+                            transition: all 0.5s ease-in-out;
                             
                             .op1{
                                 
@@ -119,8 +113,8 @@ body{
                                 color: white;
                                 background: linear-gradient(to bottom, white, blue, red);
                                 &:hover{
-                                background-color: blueviolet;
-                                border-radius: 10px;
+                                    background-color: blueviolet;
+                                    border-radius: 10px;
                                 }
                             }
                             .op2{
@@ -179,12 +173,10 @@ body{
                     text-align: center;
                 }
                 &:hover{
-                    transition: all 0.5s ease-in-out;
                     opacity: 1;
                 }
             }
         }
-}
 }
 .continue{
     width: 600px;
@@ -218,6 +210,10 @@ body{
         display: none;
     }
 }
+}
+.show-box{
+    display: none;
+}
 .menu{
     margin-top: 10px;
     font-size: 30px;
@@ -246,9 +242,9 @@ body{
         img{
             height: 300px;
             filter: brightness(50%);
+            transition: all .5s ease-in-out;
             &:hover{
                 filter: brightness(100%);
-                transition: all .5s ease-in-out;
                 transform: scale(1.2);
                 cursor: pointer;
             }
@@ -265,23 +261,21 @@ body{
 
     .hambur{
             position: absolute;
-            z-index: 51;
             background-color: blueviolet;
             width: 50px;
+            z-index: 1;
             height: 50px;
             border-radius:10px ;
             margin-top: 65px;
             margin-left: 1350px;
-            &:hover{
-                cursor: pointer;
-            }
-
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
         }
-        .letter{
+        .varter{
             position: absolute;
-            width: 500px;
+            width: 500px !important;
             margin-left: 750px;
-            z-index: 55;
+            z-index:1;
         } 
     .pech{
         margin-top: 200px;
@@ -304,10 +298,10 @@ body{
         border: 1px solid black;
         border-radius:10px;
         overflow: hidden;
+        transition: all .8s ease-in-out;
         &:hover{
             z-index: 50;
             margin-left: 500px;
-            transition: all .5s ease-in-out;
             transform: rotateZ(0deg);
         }
         
@@ -326,14 +320,14 @@ body{
         transform: rotateZ(0deg);
         background-color: white;
         width: 500px;
-        z-index: 2;
+        z-index: 1;
         border: 1px solid black;
         border-radius:10px;
         overflow: hidden;
+        transition: all .8s ease-in-out;
         &:hover{
             z-index: 50;
             margin-left: 500px;
-            transition: all .5s ease-in-out;
             transform: rotateZ(0deg);
         }
 
@@ -349,17 +343,17 @@ body{
         position: absolute;
         margin-top: 120px;
         background-color: white;
-        z-index: 3;
+        z-index: 1;
         margin-left: 700px;
         transform: rotateZ(-10deg);
         width: 500px;
         border: 1px solid black;
         border-radius:10px;
         overflow: hidden;
+        transition: all .8s ease-in-out;
         &:hover{
-            z-index: 50;
+            z-index: 55;
             margin-left: 500px;
-            transition: all .5s ease-in-out;
             transform: rotateZ(0deg);
         }
 
@@ -375,17 +369,17 @@ body{
         position: absolute;
         margin-top: 150px;
         background-color: white;
-        z-index: 4;
+        z-index: 1;
         margin-left: 730px;
         transform: rotateZ(-20deg);
         width: 500px;
         border: 1px solid black;
         border-radius:10px;
         overflow: hidden;
+        transition: all .8s ease-in-out;
         &:hover{
             z-index: 50;
             margin-left: 500px;
-            transition: all .5s ease-in-out;
             transform: rotateZ(0deg);
         }
         
@@ -401,17 +395,17 @@ body{
         position: absolute;
         margin-top: 180px;
         background-color: white;
-        z-index: 5;
+        z-index: 1;
         margin-left: 770px;
         transform: rotateZ(-30deg);
         width: 500px;
         border: 1px solid black;
         border-radius:10px;
         overflow: hidden;
+        transition: all .8s ease-in-out;
         &:hover{
             z-index: 50;
             margin-left: 500px;
-            transition: all .5s ease-in-out;
             transform: rotateZ(0deg);
         }
         
@@ -427,17 +421,17 @@ body{
         position: absolute;
         margin-top: 200px;
         background-color: white;
-        z-index: 6;
+        z-index: 1;
         margin-left: 810px;
         transform: rotateZ(-40deg);
         width: 500px;
         border: 1px solid black;
         border-radius:10px;
         overflow: hidden;
+        transition: all 1s ease-in-out;
         &:hover{
-            z-index: 50;
+            // z-index: 50;
             margin-left: 500px;
-            transition: all .5s ease-in-out;
             transform: rotateZ(0deg);
         }
         
@@ -782,54 +776,69 @@ footer{
 .convert{
     display: none;
     border-radius: 20px;
-    top: 120px;
-    left: 400px;
+    top: 230px;
+    left: 260px;
     z-index: 55;
-    width: 700px;
-    height: 200px;
+    width: 1000px;
+    height: 400px;
     position: fixed;
     background-color: #FF2D95;
     box-shadow: 5px 5px 10px grey;
     .menu{
-        text-align: center;
-        font-size: 20px;
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 7px #000;
     }
     .op{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
     .imgandbutton{
-        cursor: pointer;
-        width: 100px;
-        margin: 10px;
-        &:hover{
-        img{
-            margin-left: 50px;
-            transition: all 0.5s ease-out;
-            width: 50px;
-            height: 50px;
-        }
-        p{
-            transition: all 0.5s ease-out;
-            font-size: 15px;
-        }
-        }
-        img{
-            margin-left: 100px;
-            width: 20px;
-            height: 20px;
-        }
-        p{
-            font-size: 30px;
-        }
-        // button{
-        //     background-color: blanchedalmond;
-        //     width: 150px;
-        // }
+    cursor: pointer;
+    margin: 10px;
+    img{
+        transition: all 0.5s ease-in-out;
+        filter: brightness(50%);
+        width: 250px;
+        height: 250px;
     }
-    input{
-        margin-top: 5px;
-        margin-left: 30px;
+    .t1{
+        position: absolute;
+        margin-top: -50px;
+        color: $ghost;
+        left: 110px;
+        font-size: 30px;
+        text-shadow: 2px 2px 7px #000;
     }
-    button{
-        margin-left: 60px;
+    .t2{
+        position: absolute;
+        margin-top: -50px;
+        color: $ghost;
+        left: 440px;
+        font-size: 30px;
+        text-shadow: 2px 2px 7px #000;
+    }
+    .t3{
+        position: absolute;
+        margin-top: -50px;
+        color: $ghost;
+        left: 770px;
+        font-size: 30px;
+        text-shadow: 2px 2px 7px #000;
+    }
+    &:hover{
+        img{
+            filter: brightness(100%);
+        }
+        .t1,
+        .t2,
+        .t3{
+            color: black;
+            text-shadow: 0 0 10px white;
+        }
+    }
     }
     }
     .op1{
@@ -850,5 +859,109 @@ footer{
             margin-left: 60px;
             }
             }
-}
+        }
+        .con1{
+        display: none;
+        overflow: hidden;
+        border-radius: 10px;
+        top: 100px;
+        left: 450px;
+        z-index: 56;
+        width: 600px;
+        height: 500px;
+        position: fixed;
+        background-color: #FF2D95;
+        box-shadow: 5px 5px 10px grey;
+        .img{
+            overflow: hidden;
+            height: 350px;
+            img{
+                margin-top: -200px;
+                width: 700px;
+            }
+        }
+        .menu{
+            margin-top: 5px;
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 7px #000;
+        }
+        .en{
+            display: flex;
+            width: 300px;
+            .ty{
+                cursor: pointer;
+                width: 45px;
+                text-align: center;
+                margin-left: 20px;
+                background-color: #eeeeee;
+                border-radius: 5px;
+                transition: all 0.5s ease-in-out;
+                img{
+                    width: 20px;
+                }
+                &:hover{
+                    background-color: #cacaca;
+                }
+            }
+            .tm{
+                cursor: pointer;
+                width: 45px;
+                text-align: center;
+                height: 25px;
+                margin-left: 5px;
+                background-color: #ffdd59;
+                border-radius: 5px;
+                transition: all 0.5s ease-in-out;
+                img{
+                    width: 16px;
+                }
+                &:hover{
+                    background-color: #e6c957;
+                }
+            }
+            .kolich{
+                display: flex;
+                font-family: sans-serif;
+                font-size: 17px;
+                margin-left: 30px;
+                option{
+                    left: 5px;
+                }
+            }
+        }
+        }
+        .mmain{
+            cursor: pointer;
+            right: -110px;
+            bottom: 500px;
+            z-index: 60;
+            position: fixed;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                right: 0;
+            }
+            .market{
+                backdrop-filter: blur(5px);
+                background-color: rgba(243, 74, 74, 0.288);
+                width: 150px;
+                display: flex;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                img{
+                position: relative;
+                left: 5px;
+                height: 35px;
+                width: 35px;
+            }
+            p{
+                color: $ghost;
+                position: relative;
+                left: 10px;
+                top: 9px;
+                text-align: center;
+            }
+        }
+    }
 };

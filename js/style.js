@@ -42,3 +42,12 @@ $(document).ready(function(){
       $(".convert").fadeIn()
   });
 });
+
+$(".tor").click(function(){
+    $('.con1').fadeIn();
+    $('.convert').css("display", "none")
+});
+
+$(".click").click(function(){
+    $('.show-box').fadeIn()
+})
