@@ -39,7 +39,7 @@ body .main .first .container1 .end .inp {
   background: linear-gradient(to bottom, transparent, white);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  color: ghostwhite;
+  color: #4d4141;
   outline: none;
   border: none;
   border-bottom: 2px solid red;
@@ -260,7 +260,7 @@ body .main .FAQs .FirstFaq .hambur {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-body .main .FAQs .FirstFaq .varter {
+body .main .FAQs .FirstFaq .letter {
   position: absolute;
   width: 500px !important;
   margin-left: 750px;
@@ -725,6 +725,39 @@ body .convert {
   background-color: #FF2D95;
   box-shadow: 5px 5px 10px grey;
 }
+body .convert .x9 {
+  position: absolute;
+  right: 6px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+body .convert .x9:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: yellow;
+  border-radius: 10px;
+}
+body .convert .x9 .x1 {
+  position: relative;
+  top: 3px;
+  right: -11px;
+  transform: rotateZ(45deg);
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+body .convert .x9 .x2 {
+  position: relative;
+  top: -5.5px;
+  width: 10px;
+  right: 1px;
+  transform: rotateZ(-135deg);
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
 body .convert .menu {
   margin-top: 5px;
   font-size: 30px;
@@ -740,6 +773,8 @@ body .convert .op {
 body .convert .op .imgandbutton {
   cursor: pointer;
   margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 body .convert .op .imgandbutton img {
   transition: all 0.5s ease-in-out;
@@ -749,6 +784,7 @@ body .convert .op .imgandbutton img {
 }
 body .convert .op .imgandbutton .t1 {
   position: absolute;
+  transition: all 0.5s ease-in-out;
   margin-top: -50px;
   color: ghostwhite;
   left: 110px;
@@ -756,6 +792,7 @@ body .convert .op .imgandbutton .t1 {
   text-shadow: 2px 2px 7px #000;
 }
 body .convert .op .imgandbutton .t2 {
+  transition: all 0.5s ease-in-out;
   position: absolute;
   margin-top: -50px;
   color: ghostwhite;
@@ -764,6 +801,7 @@ body .convert .op .imgandbutton .t2 {
   text-shadow: 2px 2px 7px #000;
 }
 body .convert .op .imgandbutton .t3 {
+  transition: all 0.5s ease-in-out;
   position: absolute;
   margin-top: -50px;
   color: ghostwhite;
@@ -773,6 +811,7 @@ body .convert .op .imgandbutton .t3 {
 }
 body .convert .op .imgandbutton:hover img {
   filter: brightness(100%);
+  transform: scale(1.2);
 }
 body .convert .op .imgandbutton:hover .t1,
 body .convert .op .imgandbutton:hover .t2,
@@ -804,8 +843,42 @@ body .con1 {
   width: 600px;
   height: 500px;
   position: fixed;
-  background-color: #FF2D95;
+  background-color: #cfcece;
   box-shadow: 5px 5px 10px grey;
+}
+body .con1 .x0 {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  background-color: #c0c0c0 !important;
+  transition: all 0.2s ease-in-out;
+}
+body .con1 .x0:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+body .con1 .x0 .x1 {
+  position: relative;
+  top: 4px;
+  right: -11px;
+  transform: rotateZ(45deg);
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+body .con1 .x0 .x2 {
+  position: relative;
+  top: -5.5px;
+  width: 10px;
+  right: 1px;
+  transform: rotateZ(-135deg);
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
 }
 body .con1 .img {
   overflow: hidden;
@@ -824,14 +897,14 @@ body .con1 .menu {
 }
 body .con1 .en {
   display: flex;
-  width: 300px;
+  width: 900px;
 }
 body .con1 .en .ty {
   cursor: pointer;
   width: 45px;
   text-align: center;
   margin-left: 20px;
-  background-color: #eeeeee;
+  background-color: #dddddd;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -839,7 +912,7 @@ body .con1 .en .ty img {
   width: 20px;
 }
 body .con1 .en .ty:hover {
-  background-color: #cacaca;
+  background-color: silver;
 }
 body .con1 .en .tm {
   cursor: pointer;
@@ -847,7 +920,7 @@ body .con1 .en .tm {
   text-align: center;
   height: 25px;
   margin-left: 5px;
-  background-color: #ffdd59;
+  background-color: yellow;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -865,6 +938,22 @@ body .con1 .en .kolich {
 }
 body .con1 .en .kolich option {
   left: 5px;
+}
+body .con1 .en .kol2 {
+  font-family: sans-serif;
+  width: 300px;
+  margin-left: 250px;
+}
+body .con1 button {
+  background-color: yellow;
+  width: 94%;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+  border: none;
+  font-size: 20px;
+  font-family: sans-serif;
 }
 body .mmain {
   cursor: pointer;

@@ -32,9 +32,14 @@ $("#mes").click(function () {
     $('.d').fadeOut();
   });
 });
+$('.x0').click(function () {
+  $('.con1').fadeOut();
+});
+$('.x9').click(function () {
+  $('.convert').fadeOut();
+});
 $(document).ready(function () {
   $(".market").click(function () {
-    //   $("body").css("backdrop-filter", "blur(5px)");
     $(".convert").fadeIn();
   });
 });
@@ -44,4 +49,16 @@ $(".tor").click(function () {
 });
 $(".click").click(function () {
   $('.show-box').fadeIn();
-});
+}); // let a = 1;
+//         function unClICK(){
+//             let plus=document.getElementById('optiono')
+//             a++
+//             plus.textContent = a.toString();
+//         }
+//         function clickME(){
+//             let minus=document.getElementById('optiono')
+//             if(a>0){
+//                 a--
+//                 minus.textContent = a.toString();
+//             }
+//         }

@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <img class="hambur" src="./icons/9851132801553239378 (1).svg" alt="">
-                    <img class="varter" src="./icons/17952689171595156226.svg" alt="">
+                    <img class="letter" src="./icons/17952689171595156226.svg" alt="">
                 </div>
                 <div class="SecondFaq">
                     <div class="pech1 h4">Есть ли у нас учебное заведение ?</div>
@@ -261,11 +261,11 @@
             <footer>
                 Сайт разработан компанией  OPEN  WEB
             </footer>
+            <!-- footer end -->
         </div>
-        <!-- footer end -->
     </div>
-    
     <!-- main end -->
+
     <!-- messenge with us -->
     <div class="message">
         <div class="d">
@@ -282,7 +282,17 @@
         <img id="mes" src="./icons/message-icon-png-14920.png" alt="">
     </div>
     <!-- messenge with us end -->
+    <div class="mmain">
+        <div class="market">
+            <img src="/icons/shopping-cart.png" alt="">
+            <p>Для заказов</p>
+        </div>
+    </div>
     <div class="convert">
+        <div class="x9">
+            <div class="x1"></div>
+            <div class="x2"></div>
+        </div>
         <div class="menu">Для заказов</div>
         <div class="op">
             <div class="imgandbutton tor">
@@ -300,6 +310,10 @@
         </div>
     </div>
     <div class="con1">
+        <div class="x0">
+            <div class="x1"></div>
+            <div class="x2"></div>
+        </div>
     <div class="img">
         <img src="images/photo_2021-10-07_18-25-50.jpg" alt="">
     </div>
@@ -309,14 +323,10 @@
     <div class="en">
         <div class="ty" onclick="clickME()"><img src="/icons/minus.png" alt=""></div>
         <div class="tm" onclick="unClICK()"><img src="/icons/plus.png" alt=""></div>
-        <div class="kolich"> кол - во <option id="optiono"></option></div>
+        <div class="kolich">кол - во <option style="margin-left: 5px;" id="optiono">1</option></div>
+        <div class="kol2" id="kol2">50000 so'm</div>
     </div>
-    </div>
-    <div class="mmain">
-        <div class="market">
-            <img src="/icons/shopping-cart.png" alt="">
-            <p>Для заказов</p>
-        </div>
+    <button id="endbut" class="endbut" type="button">Добавить в корзинку</button>
     </div>
     <!-- javascripts -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -325,15 +335,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/style.js"></script>
     <script>
+        let a = 1;
+        
         function unClICK(){
-            let a = 1;
-            document.getElementById('optiono').innerHTML=a++;
+            let plus=document.getElementById('optiono')
+            a++
+            plus.textContent = a.toString();
+            var b = a * 50000 + " so'm";
+            var d = document.getElementById('kol2').innerHTML=b;
+            document.getElementById('kol2').innerHTML=d;
         }
-        
-        
-        // $(b).click(function(){
-        // $(a++)
-        // })
+        function clickME(){
+            let minus=document.getElementById('optiono')
+            if(a>0){
+            // document.getElementById('kol2').innerHTML= d / 50000;
+            a--
+            minus.textContent = a.toString();
+            }
+        }
+        if (a=0) {
+            document.getElementById('endbut').css('background-color', 'grey')
+        }
     </script>
 </body>
 </html>
