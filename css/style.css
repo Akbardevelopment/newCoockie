@@ -1095,8 +1095,7 @@ body .mmain .market p {
   top: 9px;
   text-align: center;
 }
-
-.loading {
+body .loading {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1110,14 +1109,14 @@ body .mmain .market p {
   bottom: 0;
   z-index: 9999;
 }
-.loading .cube {
+body .loading .cube {
   position: relative;
   width: 300px;
   height: 300px;
   transform-style: preserve-3d;
   animation: animate 4s linear infinite;
 }
-.loading .cube .t {
+body .loading .cube .t {
   position: absolute;
   top: 0;
   left: 0;
@@ -1125,7 +1124,7 @@ body .mmain .market p {
   height: 100%;
   transform-style: preserve-3d;
 }
-.loading .cube .t span {
+body .loading .cube .t span {
   position: absolute;
   top: 0;
   left: 0;
@@ -1134,7 +1133,7 @@ body .mmain .market p {
   background: linear-gradient(to bottom, #151515, #ff00aa);
   transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
 }
-.loading .top {
+body .loading .top {
   position: absolute;
   top: 0;
   left: 0;
@@ -1143,7 +1142,7 @@ body .mmain .market p {
   background: #222;
   transform: rotateX(90deg) translateZ(150px);
 }
-.loading .top::before {
+body .loading .top::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1155,7 +1154,7 @@ body .mmain .market p {
   filter: blur(20px);
   box-shadow: 0 0 120px #860a57, 0 0 200px #b10a95, 0 0 300px #af129a, 0 0 400px #d31995, 0 0 500px #ff29bf;
 }
-.loading .cube1 {
+body .loading .cube1 {
   top: 100px;
   left: -400px;
   position: relative;
@@ -1164,7 +1163,7 @@ body .mmain .market p {
   transform-style: preserve-3d;
   animation: animate 4s linear infinite;
 }
-.loading .cube1 .t1 {
+body .loading .cube1 .t1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1172,7 +1171,7 @@ body .mmain .market p {
   height: 100%;
   transform-style: preserve-3d;
 }
-.loading .cube1 .t1 span {
+body .loading .cube1 .t1 span {
   position: absolute;
   top: 0;
   left: 0;
@@ -1181,7 +1180,7 @@ body .mmain .market p {
   background: linear-gradient(to bottom, #151515, #2bff00);
   transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
 }
-.loading .top1 {
+body .loading .top1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1190,7 +1189,7 @@ body .mmain .market p {
   background: #222;
   transform: rotateX(90deg) translateZ(50px);
 }
-.loading .top1::before {
+body .loading .top1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1202,7 +1201,7 @@ body .mmain .market p {
   filter: blur(20px);
   box-shadow: 0 0 100px #0a6412, 0 0 180px #0c8530, 0 0 280px #119231, 0 0 380px #15ac4f, 0 0 480px #29ff29;
 }
-.loading .cube2 {
+body .loading .cube2 {
   top: -400px;
   right: -600px;
   position: relative;
@@ -1211,7 +1210,7 @@ body .mmain .market p {
   transform-style: preserve-3d;
   animation: animate 4s linear infinite;
 }
-.loading .cube2 .t2 {
+body .loading .cube2 .t2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1219,7 +1218,7 @@ body .mmain .market p {
   height: 100%;
   transform-style: preserve-3d;
 }
-.loading .cube2 .t2 span {
+body .loading .cube2 .t2 span {
   position: absolute;
   top: 0;
   left: 0;
@@ -1236,7 +1235,7 @@ body .mmain .market p {
     transform: rotateX(-30deg) rotateY(360deg);
   }
 }
-.loading .top2 {
+body .loading .top2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1245,7 +1244,7 @@ body .mmain .market p {
   background: #222;
   transform: rotateX(90deg) translateZ(75px);
 }
-.loading .top2::before {
+body .loading .top2::before {
   content: "";
   position: absolute;
   top: 0;
