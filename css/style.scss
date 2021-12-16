@@ -8,11 +8,16 @@ $gem: 'font-awesome-sass';
     color: yellowgreen;
 }
 body{
+    // display: none;
+    background-color: white;
+    color: black;
     margin: 0;
     overflow-x: hidden;
     font-family: 'Bonheur Royale', cursive ;
+
     .main{
     .first{
+    transition: all .5s ease-in-out;
     background: url("/images/cake-4910417.jpg") no-repeat center center / cover;
     height: 500px;
     
@@ -77,7 +82,7 @@ body{
                 top: 70px;
                 left: 90.5%;
                 width: 140px;
-                height: 150px;
+                height: auto;
                 .tran{
                     position: relative;
                     width: 50px;
@@ -172,6 +177,14 @@ body{
                     padding-top: 10px !important;
                     text-align: center;
                 }
+                .dark{
+                    .ux{
+                        background: linear-gradient(to left, white, black);
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        border: none;
+                    }
+                }
                 &:hover{
                     opacity: 1;
                 }
@@ -254,306 +267,305 @@ body{
 .FAQs{
     margin: 10px;
     
-    .FirstFaq{
-        display: flex;
+.FirstFaq{
+    display: flex;
 
-    .hambur{
-            position: absolute;
-            background-color: blueviolet;
-            width: 50px;
-            z-index: 1;
-            height: 50px;
-            border-radius:10px ;
-            margin-top: 65px;
-            margin-left: 1350px;
-            cursor: pointer;
-            transition: all 0.5s ease-in-out;
-        }
-        .letter{
-            position: absolute;
-            width: 500px !important;
-            margin-left: 750px;
-            z-index:1;
-        } 
-    .pech{
-        margin-top: 200px;
-    }
-
-    .PIRST{   
-         display: none;
-         margin-left: -90px;
-
-       
-    .FAQ-1{
-        display: flex;
+.hambur{
         position: absolute;
-        margin-left: 660px;
-        margin-top: 50px;
+        background-color: blueviolet;
+        width: 50px;
         z-index: 1;
-        background-color: white;
-        width: 500px;
-        transform: rotateZ(10deg);
-        border: 1px solid black;
-        border-radius:10px;
-        overflow: hidden;
-        transition: all .8s ease-in-out;
-        &:hover{
-            z-index: 50;
-            margin-left: 500px;
-            transform: rotateZ(0deg);
-        }
-        
-        .FAQ-1img{
-            img{
-                width: 200px;
-                height: 200px;
-            }
-        }
+        height: 50px;
+        border-radius:10px ;
+        margin-top: 65px;
+        margin-left: 1350px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
     }
-    .FAQ-2{
-        display: flex;
+    .letter{
         position: absolute;
-        margin-left: 675px;
-        margin-top: 90px;
+        width: 500px !important;
+        margin-left: 750px;
+        z-index:1;
+    } 
+.pech{
+    margin-top: 200px;
+}
+
+.PIRST{   
+        display: none;
+        margin-left: -90px;
+
+    
+.FAQ-1{
+    display: flex;
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: white;
+    width: 500px;
+    transform: rotateZ(10deg);
+    border: 1px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    &:hover{
+        z-index: 50;
+        margin-left: 500px;
         transform: rotateZ(0deg);
-        background-color: white;
-        width: 500px;
-        z-index: 1;
-        border: 1px solid black;
-        border-radius:10px;
-        overflow: hidden;
-        transition: all .8s ease-in-out;
-        &:hover{
-            z-index: 50;
-            margin-left: 500px;
-            transform: rotateZ(0deg);
+    }
+    
+    .FAQ-1img{
+        img{
+            width: 200px;
+            height: 200px;
         }
+    }
+}
+.FAQ-2{
+    display: flex;
+    position: absolute;
+    margin-left: 675px;
+    margin-top: 90px;
+    transform: rotateZ(0deg);
+    background-color: white;
+    width: 500px;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    &:hover{
+        z-index: 50;
+        margin-left: 500px;
+        transform: rotateZ(0deg);
+    }
 
-        .FAQ-2img{
-            img{
-                width: 200px;
-                height: 200px;
-            }
+    .FAQ-2img{
+        img{
+            width: 200px;
+            height: 200px;
         }
     }
-    .FAQ-3{
-        display: flex;
-        position: absolute;
-        margin-top: 120px;
-        background-color: white;
-        z-index: 1;
-        margin-left: 700px;
-        transform: rotateZ(-10deg);
-        width: 500px;
-        border: 1px solid black;
-        border-radius:10px;
-        overflow: hidden;
-        transition: all .8s ease-in-out;
-        &:hover{
-            z-index: 55;
-            margin-left: 500px;
-            transform: rotateZ(0deg);
-        }
+}
+.FAQ-3{
+    display: flex;
+    position: absolute;
+    margin-top: 120px;
+    background-color: white;
+    z-index: 1;
+    margin-left: 700px;
+    transform: rotateZ(-10deg);
+    width: 500px;
+    border: 1px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    &:hover{
+        z-index: 55;
+        margin-left: 500px;
+        transform: rotateZ(0deg);
+    }
 
-        .FAQ-3img{
-            img{
-                width: 200px;
-                height: 200px;
-            }
+    .FAQ-3img{
+        img{
+            width: 200px;
+            height: 200px;
         }
     }
-    .FAQ-4{
-        display: flex;
-        position: absolute;
-        margin-top: 150px;
-        background-color: white;
-        z-index: 1;
-        margin-left: 730px;
-        transform: rotateZ(-20deg);
-        width: 500px;
-        border: 1px solid black;
-        border-radius:10px;
-        overflow: hidden;
-        transition: all .8s ease-in-out;
-        &:hover{
-            z-index: 50;
-            margin-left: 500px;
-            transform: rotateZ(0deg);
-        }
-        
-        .FAQ-4img{
-            img{
-                width: 200px;
-                height: 200px;
-            }
+}
+.FAQ-4{
+    display: flex;
+    position: absolute;
+    margin-top: 150px;
+    background-color: white;
+    z-index: 1;
+    margin-left: 730px;
+    transform: rotateZ(-20deg);
+    width: 500px;
+    border: 1px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    &:hover{
+        z-index: 50;
+        margin-left: 500px;
+        transform: rotateZ(0deg);
+    }
+    
+    .FAQ-4img{
+        img{
+            width: 200px;
+            height: 200px;
         }
     }
-    .FAQ-5{
-        display: flex;
-        position: absolute;
-        margin-top: 180px;
-        background-color: white;
-        z-index: 1;
-        margin-left: 770px;
-        transform: rotateZ(-30deg);
-        width: 500px;
-        border: 1px solid black;
-        border-radius:10px;
-        overflow: hidden;
-        transition: all .8s ease-in-out;
-        &:hover{
-            z-index: 50;
-            margin-left: 500px;
-            transform: rotateZ(0deg);
-        }
-        
-        .FAQ-5img{
-            img{
-                width: 200px;
-                height: 200px;
-            }
+}
+.FAQ-5{
+    display: flex;
+    position: absolute;
+    margin-top: 180px;
+    background-color: white;
+    z-index: 1;
+    margin-left: 770px;
+    transform: rotateZ(-30deg);
+    width: 500px;
+    border: 1px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    &:hover{
+        z-index: 50;
+        margin-left: 500px;
+        transform: rotateZ(0deg);
+    }
+    
+    .FAQ-5img{
+        img{
+            width: 200px;
+            height: 200px;
         }
     }
-    .FAQ-6{
-        display: flex;
-        position: absolute;
-        margin-top: 200px;
-        background-color: white;
-        z-index: 1;
-        margin-left: 810px;
-        transform: rotateZ(-40deg);
-        width: 500px;
-        border: 1px solid black;
-        border-radius:10px;
-        overflow: hidden;
-        transition: all 1s ease-in-out;
-        &:hover{
-            // z-index: 50;
-            margin-left: 500px;
-            transform: rotateZ(0deg);
-        }
-        
-        .FAQ-6img{
-            img{
-                width: 200px;
-                height: 200px;
-            }
+}
+.FAQ-6{
+    display: flex;
+    position: absolute;
+    margin-top: 200px;
+    background-color: white;
+    z-index: 1;
+    margin-left: 810px;
+    transform: rotateZ(-40deg);
+    width: 500px;
+    border: 1px solid black;
+    border-radius:10px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    &:hover{
+        // z-index: 50;
+        margin-left: 500px;
+        transform: rotateZ(0deg);
+    }
+    
+    .FAQ-6img{
+        img{
+            width: 200px;
+            height: 200px;
         }
     }
+}
 }
 }
 .SecondFaq{
-    .pech1{
+.pech1{
+    position: absolute;
+    margin-top: 400px;
+}
+.arrow1 {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: -50px;
+    
+    div {
         position: absolute;
-        margin-top: 400px;
-    }
-    .arrow1 {
-        position: absolute;
-        width: 80px;
-        height: 50px;
-        margin-left: 400px;
-        margin-top: -50px;
-        
-        div {
+        top: 20px;
+        width: 90px;
+        height: 10px;
+        background-color: #337AB7;
+        left:0;
+        display: block;
+        &::after {
+            content: '';
             position: absolute;
-            top: 20px;
-            width: 90px;
+            width: 40px;
             height: 10px;
+            top: -11px;
+            right: -8px;
             background-color: #337AB7;
-            left:0;
-            display: block;
-            &::after {
-                content: '';
-                position: absolute;
-                width: 40px;
-                height: 10px;
-                top: -11px;
-                right: -8px;
-                background-color: #337AB7;
-                transform: rotate(45deg);
-            }
-            &::before {
-                content: '';
-                position: absolute;
-                width: 40px;
-                height: 10px;
-                top: 11px;
-                right: -8px;
-                background-color: #337AB7;
-                transform: rotate(-45deg);
-            }
+            transform: rotate(45deg);
         }
-    }
-    .arrow2 {
-        position: absolute;
-        width: 80px;
-        height: 50px;
-        margin-left: 400px;
-        margin-top: 390px;
-        
-        div {
+        &::before {
+            content: '';
             position: absolute;
-            top: 20px;
-            width: 90px;
+            width: 40px;
             height: 10px;
+            top: 11px;
+            right: -8px;
             background-color: #337AB7;
-            left:0;
-            display: block;
-            &::after {
-                content: '';
-                position: absolute;
-                width: 40px;
-                height: 10px;
-                top: -11px;
-                right: -8px;
-                background-color: #337AB7;
-                transform: rotate(45deg);
-            }
-            &::before {
-                content: '';
-                position: absolute;
-                width: 40px;
-                height: 10px;
-                top: 11px;
-                right: -8px;
-                background-color: #337AB7;
-                transform: rotate(-45deg);
-            }
+            transform: rotate(-45deg);
         }
     }
-    .arrow3 {
+}
+.arrow2 {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 390px;
+    
+    div {
         position: absolute;
-        width: 20px;
-        height: 20px;
-        margin-top: 370px;
-        margin-left: 1450px;
-        border-top: 5px solid #6E18C0;
-        border-right: 5px solid #6E18C0;
-        margin-right: 60px;
-        transform: rotateZ(135deg);
-    }
-    .arrow4 {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        margin-top: 430px;
-        margin-left: 1450px;
-        border-top: 5px solid #6E18C0;
-        border-right: 5px solid #6E18C0;
-        margin-right: 60px;
-        transform: rotateZ(-45deg);
-    }
-    .otv{
-        position: absolute;
-        margin-left: 690px;
-        margin-top: 395px;
-
-        a{
-            text-decoration: none;
-            color: black;
-
+        top: 20px;
+        width: 90px;
+        height: 10px;
+        background-color: #337AB7;
+        left:0;
+        display: block;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 10px;
+            top: -11px;
+            right: -8px;
+            background-color: #337AB7;
+            transform: rotate(45deg);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 10px;
+            top: 11px;
+            right: -8px;
+            background-color: #337AB7;
+            transform: rotate(-45deg);
         }
     }
+}
+.arrow3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 370px;
+    margin-left: 1450px;
+    border-top: 5px solid #6E18C0;
+    border-right: 5px solid #6E18C0;
+    margin-right: 60px;
+    transform: rotateZ(135deg);
+}
+.arrow4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 430px;
+    margin-left: 1450px;
+    border-top: 5px solid #6E18C0;
+    border-right: 5px solid #6E18C0;
+    margin-right: 60px;
+    transform: rotateZ(-45deg);
+}
+.otv{
+    position: absolute;
+    margin-left: 690px;
+    margin-top: 395px;
+
+    .a{
+        text-decoration: none;
+        color: black;
+    }
+}
 }
 }
 .ab{
@@ -563,8 +575,10 @@ body{
      margin: 10px !important;
 
     .fir{
-        background-color: whitesmoke;
+        padding-top: 5px;
+        background-color: rgb(56, 44, 44);
         border-radius: 5px;
+        color: white;
     }
     .sec{
         margin-left: 0;
@@ -678,7 +692,7 @@ footer{
     .d{
         display: none;
         position: fixed;
-        z-index: 100;
+        z-index: 110;
         right: 80px;
         border-radius: 10px;
         border:3px solid  gray;
@@ -908,7 +922,7 @@ footer{
         width: 600px;
         height: 500px;
         position: fixed;
-        background-color: rgb(207, 206, 206);
+        background-color: rgb(255, 255, 255);
         box-shadow: 5px 5px 10px grey;
         .x0{
             position: absolute;
@@ -917,7 +931,7 @@ footer{
             height: 20px;
             cursor: pointer;
             border-top-right-radius: 10px;
-            background-color: #c0c0c0 !important;
+            background-color: #dfdbdb !important;
             transition: all 0.2s ease-in-out;
 
             &:hover{
@@ -1000,6 +1014,7 @@ footer{
                 font-family: sans-serif;
                 font-size: 17px;
                 margin-left: 30px;
+                color: black;
                 option{
                     left: 5px;
                 }
@@ -1010,7 +1025,7 @@ footer{
                 margin-left: 250px;
             }
         }
-        button{
+        .endbut{
             background-color: yellow;
             width: 94%;
             height: 40px;
@@ -1019,40 +1034,332 @@ footer{
             margin-left: 20px;
             border: none;
             font-size: 20px;
-            font-family: sans-serif;
-
+            font-family: monospace;
         }
         }
-        .mmain{
-            cursor: pointer;
-            right: -110px;
-            bottom: 500px;
-            z-index: 60;
+        .endco{
+            display: none;
+            width: 800px;
+            height: 200px;
             position: fixed;
-            transition: all 0.5s ease-in-out;
-            &:hover{
-                right: 0;
-            }
-            .market{
-                backdrop-filter: blur(5px);
-                background-color: rgba(243, 74, 74, 0.288);
-                width: 150px;
-                display: flex;
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-                img{
-                position: relative;
-                left: 5px;
-                height: 35px;
-                width: 35px;
-            }
-            p{
-                color: $ghost;
-                position: relative;
-                left: 10px;
-                top: 9px;
+            top: 320px;
+            border-radius: 10px;
+            left: 380px;
+            background-color: #e6c957;
+            z-index: 100;
+            .menu{
+                margin-top: 5px;
+                font-size: 30px;
                 text-align: center;
+                color: #fff;
+                text-shadow: 2px 2px 7px #000;
             }
+            .in{
+                input{
+                    width: 200px;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                    margin-left: 70px;
+                    background:linear-gradient(to bottom, pink, white);
+                    border-bottom-left-radius: 10px;
+                    color: rgb(61, 43, 43);
+                    outline: none;
+                    border: none;
+                    border-bottom:2px solid red;
+                }
+                .but{
+                    font-family: sans-serif;
+                    position: absolute;
+                    background: rgb(214, 214, 214);
+                    border: none;
+                    border-bottom-right-radius: 10px;
+                    border-bottom:2px solid red;
+                    color: rgb(61, 43, 43);
+                    left: 270px;
+                    top: 66px;
+                    width: auto;
+                    font-size: 20px;
+                }
+                .buto{
+                    margin-left: 200px;
+                    background: linear-gradient(to left, rgb(221, 216, 216), rgb(216, 197, 197));
+                    border: 2px dashed red !important;
+                    width: 200px;
+                    font-size: 20px;
+                    right: 0;
+                }
+            }
+            .footfoot{
+                color: $ghost;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                text-align: center;
+                position: relative;
+                width: 100%;
+                top: 80px;
+                background-color: black;
+            }
+.x10{
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    background-color: #dfdbdb !important;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        background-color: grey;
+        border-radius: 10px;
+    }
+
+.x1{
+    position: relative;
+    top: 4px;
+    right: -11px;
+    transform: rotateZ(45deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+.x2{
+    position: relative;
+    top: -5.5px;
+    width: 10px;
+    right: 1px;
+    transform: rotateZ(-135deg);
+    height: 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+}
+}
+.mmain{
+    cursor: pointer;
+    right: -110px;
+    bottom: 500px;
+    z-index: 60;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        right: 0;
+    }
+    .market{
+        backdrop-filter: blur(5px);
+        background-color: rgba(243, 74, 74, 0.288);
+        width: 150px;
+        display: flex;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        img{
+        position: relative;
+        left: 5px;
+        height: 35px;
+        width: 35px;
+    }
+        p{
+            color: $ghost;
+            position: relative;
+            left: 10px;
+            top: 9px;
+            text-align: center;
         }
+    }
+}
+
+}
+.filter{
+    body{
+        display: none;
+    }
+    width: 100%;
+    height:900px ;
+    background-color: #6E18C0;
+}
+
+.cube{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    .t{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #151515, rgb(255, 0, 170));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+    }
+    }
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(150px);
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 0, 170);
+    transform: translateZ(-400px);
+    filter: blur(20px);
+    box-shadow:0 0 120px rgb(134, 10, 87),
+    0 0 200px rgb(177, 10, 149),
+    0 0 300px rgb(175, 18, 154),
+    0 0 400px rgb(211, 25, 149),
+    0 0 500px rgb(255, 41, 191)
+    }
+}
+
+.cube1{
+    top: 100px;
+    left: -400px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    .t1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #151515, rgb(43, 255, 0));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+    }
+    }
+}
+
+.top1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(50px);
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgb(43, 255, 0);
+    transform: translateZ(-150px);
+    filter: blur(20px);
+    box-shadow:0 0 100px rgb(10, 100, 18),
+    0 0 180px rgb(12, 133, 48),
+    0 0 280px rgb(17, 146, 49),
+    0 0 380px rgb(21, 172, 79),
+    0 0 480px rgb(41, 255, 41)
+    }
+}
+.cube2{
+    top: -400px;
+    right: -600px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+    .t2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #151515, rgb(14, 58, 255));
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);   
+    }
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.top2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px);
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: rgb(36, 40, 247);
+    transform: translateZ(-200px);
+    filter: blur(20px);
+    box-shadow:0 0 100px rgb(10, 43, 104),
+    0 0 180px rgb(11, 48, 150),
+    0 0 280px rgb(26, 66, 179),
+    0 0 380px rgb(26, 97, 190),
+    0 0 480px rgb(0, 162, 255)
+    }
+}
+  
+.dark-mode {
+    transition: all .5s ease-in-out;
+    background-color: black;
+    color: $ghost;
+    .letter,
+    .ps-10{
+        border-radius: 50px;
+        background-color:blueviolet;
+    }
+    .FAQ-1,
+    .FAQ-2,
+    .FAQ-3,
+    .FAQ-4,
+    .FAQ-5,
+    .FAQ-6{
+        color: black;
     }
 }

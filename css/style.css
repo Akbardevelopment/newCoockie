@@ -11,11 +11,14 @@
 }
 
 body {
+  background-color: white;
+  color: black;
   margin: 0;
   overflow-x: hidden;
   font-family: "Bonheur Royale", cursive;
 }
 body .main .first {
+  transition: all 0.5s ease-in-out;
   background: url("/images/cake-4910417.jpg") no-repeat center center/cover;
   height: 500px;
 }
@@ -79,7 +82,7 @@ body .main .first .container1 .end .settings {
   top: 70px;
   left: 90.5%;
   width: 140px;
-  height: 150px;
+  height: auto;
 }
 body .main .first .container1 .end .settings .tran {
   position: relative;
@@ -168,6 +171,12 @@ body .main .first .container1 .end .settings .tran .op {
 body .main .first .container1 .end .settings .raz {
   padding-top: 10px !important;
   text-align: center;
+}
+body .main .first .container1 .end .settings .dark .ux {
+  background: linear-gradient(to left, white, black);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
 }
 body .main .first .container1 .end .settings:hover {
   opacity: 1;
@@ -513,7 +522,7 @@ body .main .FAQs .SecondFaq .otv {
   margin-left: 690px;
   margin-top: 395px;
 }
-body .main .FAQs .SecondFaq .otv a {
+body .main .FAQs .SecondFaq .otv .a {
   text-decoration: none;
   color: black;
 }
@@ -524,8 +533,10 @@ body .main .abo {
   margin: 10px !important;
 }
 body .main .abo .fir {
-  background-color: whitesmoke;
+  padding-top: 5px;
+  background-color: #382c2c;
   border-radius: 5px;
+  color: white;
 }
 body .main .abo .sec {
   margin-left: 0;
@@ -622,7 +633,7 @@ body .main footer {
 body .message .d {
   display: none;
   position: fixed;
-  z-index: 100;
+  z-index: 110;
   right: 80px;
   border-radius: 10px;
   border: 3px solid gray;
@@ -843,7 +854,7 @@ body .con1 {
   width: 600px;
   height: 500px;
   position: fixed;
-  background-color: #cfcece;
+  background-color: white;
   box-shadow: 5px 5px 10px grey;
 }
 body .con1 .x0 {
@@ -853,7 +864,7 @@ body .con1 .x0 {
   height: 20px;
   cursor: pointer;
   border-top-right-radius: 10px;
-  background-color: #c0c0c0 !important;
+  background-color: #dfdbdb !important;
   transition: all 0.2s ease-in-out;
 }
 body .con1 .x0:hover {
@@ -935,6 +946,7 @@ body .con1 .en .kolich {
   font-family: sans-serif;
   font-size: 17px;
   margin-left: 30px;
+  color: black;
 }
 body .con1 .en .kolich option {
   left: 5px;
@@ -944,7 +956,7 @@ body .con1 .en .kol2 {
   width: 300px;
   margin-left: 250px;
 }
-body .con1 button {
+body .con1 .endbut {
   background-color: yellow;
   width: 94%;
   height: 40px;
@@ -953,7 +965,103 @@ body .con1 button {
   margin-left: 20px;
   border: none;
   font-size: 20px;
+  font-family: monospace;
+}
+body .endco {
+  display: none;
+  width: 800px;
+  height: 200px;
+  position: fixed;
+  top: 320px;
+  border-radius: 10px;
+  left: 380px;
+  background-color: #e6c957;
+  z-index: 100;
+}
+body .endco .menu {
+  margin-top: 5px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 7px #000;
+}
+body .endco .in input {
+  width: 200px;
   font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 70px;
+  background: linear-gradient(to bottom, pink, white);
+  border-bottom-left-radius: 10px;
+  color: #3d2b2b;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid red;
+}
+body .endco .in .but {
+  font-family: sans-serif;
+  position: absolute;
+  background: #d6d6d6;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid red;
+  color: #3d2b2b;
+  left: 270px;
+  top: 66px;
+  width: auto;
+  font-size: 20px;
+}
+body .endco .in .buto {
+  margin-left: 200px;
+  background: linear-gradient(to left, #ddd8d8, #d8c5c5);
+  border: 2px dashed red !important;
+  width: 200px;
+  font-size: 20px;
+  right: 0;
+}
+body .endco .footfoot {
+  color: ghostwhite;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 80px;
+  background-color: black;
+}
+body .endco .x10 {
+  top: 0;
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  background-color: #dfdbdb !important;
+  transition: all 0.2s ease-in-out;
+}
+body .endco .x10:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+body .endco .x10 .x1 {
+  position: relative;
+  top: 4px;
+  right: -11px;
+  transform: rotateZ(45deg);
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+body .endco .x10 .x2 {
+  position: relative;
+  top: -5.5px;
+  width: 10px;
+  right: 1px;
+  transform: rotateZ(-135deg);
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
 }
 body .mmain {
   cursor: pointer;
@@ -986,4 +1094,185 @@ body .mmain .market p {
   left: 10px;
   top: 9px;
   text-align: center;
+}
+
+.filter {
+  width: 100%;
+  height: 900px;
+  background-color: #6E18C0;
+}
+.filter body {
+  display: none;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+.cube .t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.cube .t span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #151515, #ff00aa);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+}
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #ff00aa;
+  transform: translateZ(-400px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px #860a57, 0 0 200px #b10a95, 0 0 300px #af129a, 0 0 400px #d31995, 0 0 500px #ff29bf;
+}
+
+.cube1 {
+  top: 100px;
+  left: -400px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+.cube1 .t1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.cube1 .t1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #151515, #2bff00);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+}
+
+.top1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(50px);
+}
+.top1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: #2bff00;
+  transform: translateZ(-150px);
+  filter: blur(20px);
+  box-shadow: 0 0 100px #0a6412, 0 0 180px #0c8530, 0 0 280px #119231, 0 0 380px #15ac4f, 0 0 480px #29ff29;
+}
+
+.cube2 {
+  top: -400px;
+  right: -600px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+.cube2 .t2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.cube2 .t2 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #151515, #0e3aff);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.top2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(75px);
+}
+.top2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #2428f7;
+  transform: translateZ(-200px);
+  filter: blur(20px);
+  box-shadow: 0 0 100px #0a2b68, 0 0 180px #0b3096, 0 0 280px #1a42b3, 0 0 380px #1a61be, 0 0 480px #00a2ff;
+}
+
+.dark-mode {
+  transition: all 0.5s ease-in-out;
+  background-color: black;
+  color: ghostwhite;
+}
+.dark-mode .letter,
+.dark-mode .ps-10 {
+  border-radius: 50px;
+  background-color: blueviolet;
+}
+.dark-mode .FAQ-1,
+.dark-mode .FAQ-2,
+.dark-mode .FAQ-3,
+.dark-mode .FAQ-4,
+.dark-mode .FAQ-5,
+.dark-mode .FAQ-6 {
+  color: black;
 }

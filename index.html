@@ -44,6 +44,9 @@
                                     <div class="raz">
                                         размер шрифта
                                     </div>
+                                    <div class="dark">
+                                        <button class="ux" type="button" onclick="myFunction()">Темный / Белый моды </button>
+                                    </div>
                                 </div>
                         </div>
                     </div> 
@@ -140,7 +143,7 @@
                     <div class="arrow3"></div>
                     <div class="arrow4"></div>
             
-                    <div class="otv h4">Да у нас есть учебное заведение ! Для информации обращайтесь <a href="#aboutus">тут</a></div>
+                    <div class="otv h4">Да у нас есть учебное заведение ! Для информации обращайтесь <a class="a" href="#aboutus">тут</a></div>
                 </div>
             </div>
             <hr style="margin-top: 500px;">
@@ -156,7 +159,7 @@
                 </div>
                 <div class="col-6 sec">
                     <div class="row">
-                        <div class="ps-3 col-1">
+                        <div class="ps-10 ps-3 col-1">
                             <img class="geo-icon-16" src="./icons/9851132801553239378.svg" alt="">
                         </div>
             
@@ -166,7 +169,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="ps-3 col-1">
+                        <div class="ps-10 ps-3 col-1">
                             <img class="geo-icon-16" src="./icons/telephone_icon-icons.com_69572.svg" alt="">
                         </div>
             
@@ -176,7 +179,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="ps-3 col-1">
+                        <div class="ps-10 ps-3 col-1">
                             <img class="geo-icon-16" src="./icons/opened-email-envelope_icon-icons.com_70656.svg" alt="">
                         </div>
             
@@ -324,38 +327,60 @@
         <div class="ty" onclick="clickME()"><img src="/icons/minus.png" alt=""></div>
         <div class="tm" onclick="unClICK()"><img src="/icons/plus.png" alt=""></div>
         <div class="kolich">кол - во <option style="margin-left: 5px;" id="optiono">1</option></div>
-        <div class="kol2" id="kol2">50000 so'm</div>
+        <div class="kol2" id="kol2">250000 so'm</div>
     </div>
     <button id="endbut" class="endbut" type="button">Добавить в корзинку</button>
+    </div>
+    <div class="endco">
+        <p class="menu">Регестрация</p>
+    <div class="in">
+        <input class="inp" id="email" type="email" placeholder=" Укажите свой эмаил @gmail.com">
+        <button class="but">@gmail.com</button>
+        <button class="buto" type="button" onclick="sendEmail()">Отправить эмаил</button>
+    </div>
+    <div class="footfoot">
+        Сайт разработан компанией  OPEN  WEB
+    </div>
+    <div class="x10">
+        <div class="x1"></div>
+        <div class="x2"></div>
+    </div>
     </div>
     <!-- javascripts -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script src="js/jquery/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/js/style.js"></script>
-    <script>
-        let a = 1;
-        
-        function unClICK(){
-            let plus=document.getElementById('optiono')
-            a++
-            plus.textContent = a.toString();
-            var b = a * 50000 + " so'm";
-            var d = document.getElementById('kol2').innerHTML=b;
-            document.getElementById('kol2').innerHTML=d;
-        }
-        function clickME(){
-            let minus=document.getElementById('optiono')
-            if(a>0){
-            // document.getElementById('kol2').innerHTML= d / 50000;
-            a--
-            minus.textContent = a.toString();
-            }
-        }
-        if (a=0) {
-            document.getElementById('endbut').css('background-color', 'grey')
-        }
-    </script>
 </body>
+<div class="filter">
+    <div class="cube">
+        <div class="t top"></div>
+        <div class="t">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+    <div class="cube1">
+        <div class="t1 top1"></div>
+        <div class="t1">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+    <div class="cube2">
+        <div class="t2 top2"></div>
+        <div class="t2">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+        </div>
+    </div>
+</div>
 </html>

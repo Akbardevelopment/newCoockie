@@ -42,7 +42,16 @@ $('.x0').click(function(){
 
 $('.x9').click(function(){
     $('.convert').fadeOut()
-})
+});
+
+$('.endbut').click(function(){
+    $('.endco').fadeIn()
+    $('.con1').fadeOut()
+});
+
+$('.x10').click(function(){
+    $('.endco').fadeOut()
+});
 
 $(document).ready(function(){
   $(".market").click(function(){
@@ -61,17 +70,60 @@ $(".click").click(function(){
 
 
 
-// let a = 1;
-        
-//         function unClICK(){
-//             let plus=document.getElementById('optiono')
-//             a++
-//             plus.textContent = a.toString();
-//         }
-//         function clickME(){
-//             let minus=document.getElementById('optiono')
-//             if(a>0){
-//                 a--
-//                 minus.textContent = a.toString();
-//             }
-//         }
+var a = 1;
+
+function unClICK(){
+    let plus=document.getElementById('optiono');
+    a++;
+    plus.textContent = a.toString();
+    var b = a * 250000 + " so'm";
+    var d = document.getElementById('kol2').innerHTML=b;
+    document.getElementById('kol2').innerHTML=d;
+    document.getElementById("endbut").style.backgroundColor = "yellow";
+    document.getElementById("endbut").style.cursor = "pointer";
+}
+
+function clickME(){
+if (a>0) {
+    let plus=document.getElementById('optiono');
+    a--;
+    plus.textContent = a.toString();
+    var b = a * 250000 + " so'm";
+    var d = document.getElementById('kol2').innerHTML=b;
+    document.getElementById('kol2').innerHTML=d;
+}
+
+if (a==0) {
+    let endbut = document.getElementById("endbut")
+    endbut.style.backgroundColor = "rgb(221, 221, 221)";
+    endbut.style.cursor = "auto";
+    endbut.style.transition = "all 0.5s ease-in-out";
+}
+}
+
+var email=document.getElementById('email')
+
+function sendEmail() {
+Email.send({
+    Host: "smtp.gmail.com",
+    Username : "akbardaminov8@gmail.com",
+    Password : "akbardaminov07",
+    To : email,
+    From : "akbardaminov51@gmail.com",
+    Subject : "Test mail Subject",
+    Body : "Test Mail Body",
+})
+    .then(function(message){
+    alert("mail sent successfully")
+});
+}
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+
+$(window).on('load', function () {
+    $('.filter').hide();
+    $('body').show()
+})
