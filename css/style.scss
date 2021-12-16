@@ -1171,179 +1171,186 @@ footer{
 }
 
 }
-.filter{
-    body{
-        display: none;
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(167, 16, 104, 0.521);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+
+    .cube{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        transform-style: preserve-3d;
+        animation: animate 4s linear infinite;
+        .t{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #151515, rgb(255, 0, 170));
+        transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        }
+        }
     }
-    width: 100%;
-    height:900px ;
-    background-color: #6E18C0;
+    
+    .top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background: #222;
+        transform: rotateX(90deg) translateZ(150px);
+        &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        background: rgb(255, 0, 170);
+        transform: translateZ(-400px);
+        filter: blur(20px);
+        box-shadow:0 0 120px rgb(134, 10, 87),
+        0 0 200px rgb(177, 10, 149),
+        0 0 300px rgb(175, 18, 154),
+        0 0 400px rgb(211, 25, 149),
+        0 0 500px rgb(255, 41, 191)
+        }
+    }
+    
+    .cube1{
+        top: 100px;
+        left: -400px;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: animate 4s linear infinite;
+        .t1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #151515, rgb(43, 255, 0));
+        transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
+        }
+        }
+    }
+    
+    .top1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: #222;
+        transform: rotateX(90deg) translateZ(50px);
+        &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: rgb(43, 255, 0);
+        transform: translateZ(-150px);
+        filter: blur(20px);
+        box-shadow:0 0 100px rgb(10, 100, 18),
+        0 0 180px rgb(12, 133, 48),
+        0 0 280px rgb(17, 146, 49),
+        0 0 380px rgb(21, 172, 79),
+        0 0 480px rgb(41, 255, 41)
+        }
+    }
+    .cube2{
+        top: -400px;
+        right: -600px;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        transform-style: preserve-3d;
+        animation: animate 4s linear infinite;
+        .t2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #151515, rgb(14, 58, 255));
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);   
+        }
+        }
+    }
+    
+    @keyframes animate{
+        0%{
+            transform: rotateX(-30deg) rotateY(0deg);
+        }
+        100%{
+            transform: rotateX(-30deg) rotateY(360deg);
+        }
+    }
+    
+    .top2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        background: #222;
+        transform: rotateX(90deg) translateZ(75px);
+        &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        background: rgb(36, 40, 247);
+        transform: translateZ(-200px);
+        filter: blur(20px);
+        box-shadow:0 0 100px rgb(10, 43, 104),
+        0 0 180px rgb(11, 48, 150),
+        0 0 280px rgb(26, 66, 179),
+        0 0 380px rgb(26, 97, 190),
+        0 0 480px rgb(0, 162, 255)
+        }
+    }
 }
 
-.cube{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: animate 4s linear infinite;
-    .t{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #151515, rgb(255, 0, 170));
-    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-    }
-    }
-}
-
-.top{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 300px;
-    background: #222;
-    transform: rotateX(90deg) translateZ(150px);
-    &::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 300px;
-    background: rgb(255, 0, 170);
-    transform: translateZ(-400px);
-    filter: blur(20px);
-    box-shadow:0 0 120px rgb(134, 10, 87),
-    0 0 200px rgb(177, 10, 149),
-    0 0 300px rgb(175, 18, 154),
-    0 0 400px rgb(211, 25, 149),
-    0 0 500px rgb(255, 41, 191)
-    }
-}
-
-.cube1{
-    top: 100px;
-    left: -400px;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    transform-style: preserve-3d;
-    animation: animate 4s linear infinite;
-    .t1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #151515, rgb(43, 255, 0));
-    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
-    }
-    }
-}
-
-.top1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: #222;
-    transform: rotateX(90deg) translateZ(50px);
-    &::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: rgb(43, 255, 0);
-    transform: translateZ(-150px);
-    filter: blur(20px);
-    box-shadow:0 0 100px rgb(10, 100, 18),
-    0 0 180px rgb(12, 133, 48),
-    0 0 280px rgb(17, 146, 49),
-    0 0 380px rgb(21, 172, 79),
-    0 0 480px rgb(41, 255, 41)
-    }
-}
-.cube2{
-    top: -400px;
-    right: -600px;
-    position: relative;
-    width: 150px;
-    height: 150px;
-    transform-style: preserve-3d;
-    animation: animate 4s linear infinite;
-    .t2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #151515, rgb(14, 58, 255));
-    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);   
-    }
-    }
-}
-
-@keyframes animate{
-    0%{
-        transform: rotateX(-30deg) rotateY(0deg);
-    }
-    100%{
-        transform: rotateX(-30deg) rotateY(360deg);
-    }
-}
-
-.top2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    background: #222;
-    transform: rotateX(90deg) translateZ(75px);
-    &::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    background: rgb(36, 40, 247);
-    transform: translateZ(-200px);
-    filter: blur(20px);
-    box-shadow:0 0 100px rgb(10, 43, 104),
-    0 0 180px rgb(11, 48, 150),
-    0 0 280px rgb(26, 66, 179),
-    0 0 380px rgb(26, 97, 190),
-    0 0 480px rgb(0, 162, 255)
-    }
-}
   
 .dark-mode {
     transition: all .5s ease-in-out;

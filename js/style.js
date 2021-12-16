@@ -124,6 +124,5 @@ function myFunction() {
 }
 
 $(window).on('load', function () {
-    $('.filter').hide();
-    $('body').show()
+    $('.loading').fadeOut(1000)
 })
