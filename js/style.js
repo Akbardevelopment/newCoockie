@@ -1,4 +1,4 @@
-let player = document.querySelector("lottie-player")
+let player = document.querySelector("lottie-player");
 let play = document.querySelector(".congratulations");
 
 $(".click").click(function () {
@@ -14,7 +14,7 @@ $(".hambur").click(function(){
 $(".set").click(function(){
     $(".settings").fadeIn();
     $(".set").click(function(){
-        $(".settings").fadeOut()
+        $(".settings").fadeOut();
     })
 })
 
@@ -32,40 +32,40 @@ $(document).ready(function(){
 $("#mes").click(function(){
     $('.d').fadeIn()
     $('.x').click(function(){
-        $('.d').fadeOut()
+        $('.d').fadeOut();
     })
 });
 
 $('.x0').click(function(){
-    $('.con1').fadeOut()
+    $('.con1').fadeOut();
 });
 
 $('.x9').click(function(){
-    $('.convert').fadeOut()
+    $('.convert').fadeOut();
 });
 
 $('.endbut').click(function(){
-    $('.endco').fadeIn()
-    $('.con1').fadeOut()
+    $('.endco').fadeIn();
+    $('.con1').fadeOut();
 });
 
 $('.x10').click(function(){
-    $('.endco').fadeOut()
+    $('.endco').fadeOut();
 });
 
 $(document).ready(function(){
   $(".market").click(function(){
-      $(".convert").fadeIn()
+      $(".convert").fadeIn();
   });
 });
 
 $(".tor").click(function(){
     $('.con1').fadeIn();
-    $('.convert').css("display", "none")
+    $('.convert').css("display", "none");
 });
 
 $(".click").click(function(){
-    $('.show-box').fadeIn()
+    $('.show-box').fadeIn();
 })
 
 
@@ -101,7 +101,7 @@ if (a==0) {
 }
 }
 
-var email=document.getElementById('email')
+var email=document.getElementById('email');
 
 function sendEmail() {
 Email.send({
@@ -111,10 +111,10 @@ Email.send({
     To : email,
     From : "akbardaminov51@gmail.com",
     Subject : "Test mail Subject",
-    Body : "Test Mail Body",
+    Body : "Test Mail Body"
 })
     .then(function(message){
-    alert("mail sent successfully")
+    alert("mail sent successfully");
 });
 }
 
@@ -124,5 +124,5 @@ function myFunction() {
 }
 
 $(window).on('load', function () {
-    $('.loading').fadeOut(1000)
+    $('.loading').fadeOut(1000);
 })

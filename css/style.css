@@ -19,7 +19,7 @@ body {
 }
 body .main .first {
   transition: all 0.5s ease-in-out;
-  background: url("/images/cake-4910417.jpg") no-repeat center center/cover;
+  background: url("../images/cake-4910417.jpg") no-repeat center center/cover;
   height: 500px;
 }
 body .main .first .container1 .end {
